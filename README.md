@@ -1,7 +1,7 @@
 ## Connect Four
 *Simple CLI Clone of Connect four written in one file in Clang.*
 
-
+[SAMPLE](https://github.com/MOMA7777/Connect-Four/blob/main/ConnectFour.cast)
 
 
 * to Make Sure u will understand Game Code Watch :-  
