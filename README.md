@@ -1,7 +1,7 @@
 ## Connect Four
 *Simple CLI Clone of Connect four written in one file in Clang.*
 
-![]()
+![](https://github.com/MOMA7777/Connect-Four/blob/main/Connect_Four.gif)
 
 
 * to Make Sure u will understand Game Code Watch :-  
