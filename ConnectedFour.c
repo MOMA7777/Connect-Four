@@ -54,8 +54,8 @@ void show ( int Connect_four[grid_rows][grid_cols] ) {
         for (int j = 0; j < grid_cols; j++) {
             
             
-            if      (Connect_four[i][j] == 0) { printf( "\033[38;5;1m(  RED ) " ); }
-            else if (Connect_four[i][j] == 1) { printf( "\033[38;5;4m( BLUE ) " ); }
+            if      (Connect_four[i][j] == 0) { printf( "\033[38;5;1m(  RED ) " ); } 
+            else if (Connect_four[i][j] == 1) { printf( "\033[38;5;4m( BLUE ) " ); } 
            
             else { printf( "\033[38;5;15m(      ) " ); }
             
@@ -70,8 +70,8 @@ bool checkDraw ( int Connect_four[grid_rows][grid_cols] ) {
    
     for (int j = 0; j < grid_cols; j++) {
     
-        if (Connect_four[0][j] == -1) return false; //Because the Connect four works like stack if one Column has Empty Upper Cell
-                                                    //that means There's an Empty cells Under that Cell.
+        if (Connect_four[0][j] == -1) return false; //Because the Connect four works like a stack if one Column has an Empty Upper Cell
+                                                    //that means There's an Empty cell Under that Cell.
 
     }
 
@@ -86,7 +86,7 @@ int checkWinner  ( int Connect_four[grid_rows][grid_cols], int current_row, int 
         
         int r = current_row, c = current_col;
         
-        //ensuring that the next 3 checkers in the Direction are not out of the 2D matrix boundries.
+        //ensuring that the next 3 checkers in the Direction are not outside the 2D matrix boundaries.
         bool boundry_safe = ( (r + (dir_r[dir] * 3) > -1 && r + (dir_r[dir] * 3) < grid_rows) && (c + (dir_c[dir] * 3) > -1 && c + (dir_c[dir] * 3) < grid_cols) );
         bool four_checkers_found = true; 
 
@@ -162,7 +162,7 @@ void Game (void) {
 
         switch ( status ) {
     
-            case -1: //in case nobody won change the player.
+            case -1: //in case nobody wins change the player.
             
                 Player_Mark = ( Player_Mark + 1 ) % 2; //change the player if (0) --> 1 and otherwise.
                 break;
